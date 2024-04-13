@@ -35,7 +35,7 @@ const SignupForm = () => {
 
     const signingUp = async () => {
       try {
-        const response = await fetch("http://www.localhost:5000/signUp", {
+        const response = await fetch("https://bloggram-mern.onrender.com/signUp", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

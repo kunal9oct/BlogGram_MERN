@@ -26,7 +26,7 @@ const PostPage = () => {
                   src={
                     post.avatarImgURL ||
                     (post.profileImgURL &&
-                      `http://www.localhost:5000/uploads/images/${post.profileImgURL}`) ||
+                      `https://bloggram-mern.onrender.com/uploads/images/${post.profileImgURL}`) ||
                     "/assets/icons/profile-placeholder.svg"
                   }
                   alt="creator"
@@ -68,7 +68,7 @@ const PostPage = () => {
             {post.image && (
               <div>
                 <img
-                  src={`http://www.localhost:5000/uploads/images/${post.image}`}
+                  src={`https://bloggram-mern.onrender.com/uploads/images/${post.image}`}
                   alt="post image"
                   className="h-64 w-full min-[500px]:h-72 min-[600px]:h-80 min-[680px]:h-96 min-[1050px]:h-[500px] min-[1150px]:h-[600px] rounded-[24px] object-cover mb-0"
                 />

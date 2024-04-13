@@ -72,7 +72,7 @@ const EditProfile = () => {
     const updatingProfile = async () => {
       try {
         const response = await fetch(
-          `http://www.localhost:5000/editProfile/${user.id}`,
+          `https://bloggram-mern.onrender.com/${user.id}`,
           {
             method: "PUT",
             headers: {
@@ -193,7 +193,7 @@ const EditProfile = () => {
                       (!changeUI &&
                         (user.avatarImgURL ||
                           (user.profileImgURL &&
-                            `http://www.localhost:5000/uploads/images/${user.profileImgURL}`))) ||
+                            `https://bloggram-mern.onrender.com/uploads/images/${user.profileImgURL}`))) ||
                       avatarURL ||
                       (file && URL.createObjectURL(file)) ||
                       "/assets/icons/profile-placeholder.svg"

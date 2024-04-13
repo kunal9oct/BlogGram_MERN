@@ -38,7 +38,7 @@ const LeftSidebar = () => {
               src={
                 user.avatarImgURL ||
                 (user.profileImgURL &&
-                  `http://www.localhost:5000/uploads/images/${user.profileImgURL}`) ||
+                  `https://bloggram-mern.onrender.com/uploads/images/${user.profileImgURL}`) ||
                 "/assets/icons/profile-placeholder.svg"
               }
               alt="profile"

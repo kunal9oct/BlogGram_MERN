@@ -88,7 +88,7 @@ const CreatePost = () => {
     const addPost = async () => {
       try {
         const response = await fetch(
-          `http://www.localhost:5000/createPost/${user.id}`,
+          `https://bloggram-mern.onrender.com/${user.id}`,
           {
             method: "POST",
             headers: {

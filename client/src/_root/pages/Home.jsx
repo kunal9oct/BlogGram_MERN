@@ -12,7 +12,7 @@ const Home = () => {
 
     const fetchAll = async () => {
       try {
-        const response = await fetch(`http://www.localhost:5000/getAll`);
+        const response = await fetch(`https://bloggram-mern.onrender.com/getAll`);
 
         const result = await response.json();
 

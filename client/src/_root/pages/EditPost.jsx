@@ -79,7 +79,7 @@ const EditPost = () => {
     const editPost = async () => {
       try {
         const response = await fetch(
-          `http://www.localhost:5000/editPost/${id}`,
+          `https://bloggram-mern.onrender.com/${id}`,
           {
             method: "POST",
             headers: {
@@ -192,7 +192,7 @@ const EditPost = () => {
                 <FileUploader
                   id="addPhoto"
                   setImage={setImage}
-                  imgSrc={`http://www.localhost:5000/uploads/images/${postData.image}`}
+                  imgSrc={`https://bloggram-mern.onrender.com/uploads/images/${postData.image}`}
                 />
               </div>
 

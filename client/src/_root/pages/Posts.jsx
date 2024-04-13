@@ -15,7 +15,7 @@ const Posts = () => {
     const fetchAll = async () => {
       try {
         const response = await fetch(
-          `http://www.localhost:5000/getPosts/${user.id}`
+          `https://bloggram-mern.onrender.com/getPosts/${user.id}`
         );
 
         const result = await response.json();

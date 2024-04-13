@@ -45,7 +45,7 @@ const PostCard = ({ post }) => {
             src={
               post.avatarImgURL ||
               (post.profileImgURL &&
-                `http://www.localhost:5000/uploads/images/${post.profileImgURL}`) ||
+                `https://bloggram-mern.onrender.com/uploads/images/${post.profileImgURL}`) ||
               "/assets/icons/profile-placeholder.svg"
             }
             alt="creator"
@@ -82,7 +82,7 @@ const PostCard = ({ post }) => {
       {post.image && (
         <div>
           <img
-            src={`http://www.localhost:5000/uploads/images/${post.image}`}
+            src={`https://bloggram-mern.onrender.com/uploads/images/${post.image}`}
             alt="post image"
             className="post-card_img"
           />
