@@ -79,7 +79,7 @@ const EditPost = () => {
     const editPost = async () => {
       try {
         const response = await fetch(
-          `https://bloggram-mern.onrender.com/${id}`,
+          `https://bloggram-mern.onrender.com/editPost/${id}`,
           {
             method: "POST",
             headers: {

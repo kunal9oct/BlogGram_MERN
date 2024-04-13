@@ -72,7 +72,7 @@ const EditProfile = () => {
     const updatingProfile = async () => {
       try {
         const response = await fetch(
-          `https://bloggram-mern.onrender.com/${user.id}`,
+          `https://bloggram-mern.onrender.com/editProfile/${user.id}`,
           {
             method: "PUT",
             headers: {
